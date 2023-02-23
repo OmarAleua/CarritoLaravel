@@ -34,5 +34,26 @@ class ProductSeeder extends Seeder
             'image' => 'https://cdn.siroko.com/s/files/1/1220/6874/products/siroko-tourmalet-j2-rain-jacket-estudio-lifestyle-01_v2/882/1158/crop_center.jpg?v=1659541168',
             'price' => 18367.00
         ]);
+
+        Product::create([
+            'name' => 'M2 FINISH LINE',
+            'description' => 'MAILLOT DE MANGA LARGA HOMBRE',
+            'image' => 'https://cdn.siroko.com/s/files/1/1220/6874/products/m2-finish-line-long-sleeve-cycling-jersey-estudio-lifestyle-01/1200x/crop_center.jpg?v=1675958805',
+            'price' => 10112.00
+        ]);
+
+        Product::create([
+            'name' => 'M4 PAVÉ',
+            'description' => 'MAILLOT CICLISMO TÉRMICO MUJER',
+            'image' => 'https://cdn.siroko.com/s/files/1/1220/6874/products/pave-maillot-m4-cycling-lifestyle-estudio-01_v1/1200x/crop_center.jpg?v=1676547029',
+            'price' => 14240.00
+        ]);
+
+        Product::create([
+            'name' => 'S1 BLACK KAPELMUUR',
+            'description' => 'CALCETINES PARA CICLISMO',
+            'image' => 'https://cdn.siroko.com/products/63db7964c48f0/1200x/crop_center.jpg?v=1675346396',
+            'price' => 2889.00
+        ]);
     }
 }
