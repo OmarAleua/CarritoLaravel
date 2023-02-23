@@ -16,10 +16,10 @@
 - **[12]-Ejecute el Seed**
 - **[13]-Cree las Rutas**
 - **[14]-Importe el Controlador dentro de Rutas**
-- **[15]-Complete el Controlador (ProductController)**
-- **[16]-Cree el archivo layout.blade.php**
-- **[17]-Cree el archivo products.blade.php**
-- **[18]-Cree el archivo cart.blade.php**
+- **[15]-Complete el Controlador (ProductController) con los Metodos: index, cart, addToCart, update y remove**
+- **[16]-Cree la vista layout.blade.php (Aqui es donde muestro los productos)**
+- **[17]-Cree la vista products.blade.php (Aqui es donde genero la directiva @foreach la cual hace un ciclo mostrando todos los productos que estan en la DataBase)**
+- **[18]-Cree la vista cart.blade.php (Aqui es donde muestro la lista de los productos agregados al carrito)**
 - **[19]-Cree los estilos**
 
 
