@@ -51,7 +51,7 @@ class ProductController extends Controller
         }
           
         session()->put('cart', $cart);
-        return redirect()->back()->with('success', 'Product added to cart successfully!');
+        return redirect()->back()->with('success', 'Producto agregado al carrito con exito!');
     }
   
     /**
@@ -65,7 +65,7 @@ class ProductController extends Controller
             $cart = session()->get('cart');
             $cart[$request->id]["quantity"] = $request->quantity;
             session()->put('cart', $cart);
-            session()->flash('success', 'Cart updated successfully');
+            session()->flash('success', 'Carrito actualizado con exito');
         }
     }
   
@@ -82,7 +82,7 @@ class ProductController extends Controller
                 unset($cart[$request->id]);
                 session()->put('cart', $cart);
             }
-            session()->flash('success', 'Product removed successfully');
+            session()->flash('success', 'Producto removido con exito');
         }
     }
 }
