@@ -44,7 +44,7 @@
         <tr>
             <td colspan="5" class="text-right">
                 <a href="{{ url('/') }}" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continuar Comprando</a>
-                <button class="btn btn-success">Pagar</button>
+                <button class="btn btn-success">Comprar</button>
             </td>
         </tr>
     </tfoot>
