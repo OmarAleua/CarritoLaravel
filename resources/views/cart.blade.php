@@ -1,3 +1,4 @@
+<!--Vista Cart.blade, en esta vista muestro la estructura de lo ya seleccionado en el carrito, en la vista Products.blade-->
 @extends('layout')
   
 @section('content')
@@ -12,11 +13,13 @@
         </tr>
     </thead>
     <tbody>
+        <!--Inicializamos la variable $total en cero-->
         @php $total = 0 @endphp
         @if(session('cart'))
             @foreach(session('cart') as $id => $details)
                 @php $total += $details['price'] * $details['quantity'] @endphp
                 <tr data-id="{{ $id }}">
+                    <!--Imagen y Detalle-->
                     <td data-th="Product">
                         <div class="row">
                             <div class="col-sm-3 hidden-xs"><img src="{{ $details['image'] }}" width="100" height="100" class="img-responsive"/></div>
@@ -25,11 +28,14 @@
                             </div>
                         </div>
                     </td>
+                    <!--Precio-->
                     <td data-th="Price">$ {{ $details['price'] }}</td>
+                    <!--Actualizar la cantidad del producto-->
                     <td data-th="Quantity">
                         <input type="number" value="{{ $details['quantity'] }}" class="form-control quantity update-cart" />
                     </td>
                     <td data-th="Subtotal" class="text-center">$ {{ $details['price'] * $details['quantity'] }}</td>
+                    <!--Boton eliminar producto-->
                     <td class="actions" data-th="">
                         <button class="btn btn-danger btn-sm remove-from-cart"><i class="fa fa-trash-o"></i></button>
                     </td>
@@ -50,7 +56,7 @@
     </tfoot>
 </table>
 @endsection
-  
+<!--Aqui creo mediante Javascript y Ajax los botones actualizar y eliminar-->  
 @section('scripts')
 <script type="text/javascript">
   

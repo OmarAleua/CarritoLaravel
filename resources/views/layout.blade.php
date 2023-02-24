@@ -16,6 +16,7 @@
     <div class="row">
         <div class="col-lg-12 col-sm-12 col-12 main-section">
             <div class="dropdown">
+                <!--Boton Carrito, margen superior derecho-->
                 <button type="button" class="btn btn-info" data-toggle="dropdown">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i> 
                     Carrito <span class="badge badge-pill badge-danger">{{ count((array) session('cart')) }}</span>
@@ -26,7 +27,9 @@
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i> 
                             <span class="badge badge-pill badge-danger">{{ count((array) session('cart')) }}</span>
                         </div>
+                        <!--Inicializamos la variable $total en cero-->
                         @php $total = 0 @endphp
+                        <!--Recorremos con un foreach lo seleccionado-->
                         @foreach((array) session('cart') as $id => $details)
                             @php $total += $details['price'] * $details['quantity'] @endphp
                         @endforeach
@@ -34,6 +37,7 @@
                             <p>Total: <span class="text-info">$ {{ $total }}</span></p>
                         </div>
                     </div>
+                    <!--la session(cart) hace que los productos seleccionados se mantengan asi-->
                     @if(session('cart'))
                         @foreach(session('cart') as $id => $details)
                             <div class="row cart-detail">

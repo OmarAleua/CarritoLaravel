@@ -1,8 +1,10 @@
+<!--Aqui en esta vista mostramos todos los productos en el home-->
 @extends('layout')
    
 @section('content')
     
 <div class="row">
+    <!--el foreach recorre todos los productos que estan en la DB que traemos desde el controlador-->
     @foreach($products as $product)
         <div class="col-xs-18 col-sm-6 col-md-3">
             <div class="thumbnail">
