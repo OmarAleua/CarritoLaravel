@@ -11,14 +11,14 @@
             <form role="form">
 
                 <div class="form-group">
-                    <label for="ejemplo_email_1">Correo Electronico</label>
+                    <label for="ejemplo_email_1">Correo Electrónico</label>
                     <input type="email" class="form-control" placeholder="Introduce tu email">
                 </div>
 
-                <h2>Direccion de Envio</h2>
+                <h2>Dirección de Envío</h2>
                 <div class="form-group">
                         <!--lista desplegable - Pais-->
-                    <label for="Select" class="col-sm-8 control-label">Pais / Region</label>                
+                    <label for="Select" class="col-sm-8 control-label">País / Región</label>                
                     <select id="Select" class="form-control">
                         <option>Argentina</option>
                         <option>España</option>
@@ -44,27 +44,27 @@
                     <input class="form-control" id="focusedInput" type="text" placeholder="Telefono">
                 </div>
 
-                <h2>Tarjeta de Credito</h2>
+                <h2>Tarjeta de Crédito</h2>
 
                 <label class="col-sm-2 control-label"></label>
                 <div class="row">                    
                     <div class="col-md-6">
-                        <label class="col-sm-10 control-label">Numero de Tarjeta</label>
+                        <label class="col-sm-10 control-label">Número de Tarjeta</label>
                         <input type="text" class="form-control" placeholder="">
                     </div>
                     <div class="col-md-6">
-                        <label class="col-sm-10 control-label">Codigo de Seguridad</label>
+                        <label class="col-sm-10 control-label">Código de Seguridad</label>
                         <input type="text" class="form-control" placeholder="">
                     </div>
                 </div>
                 <label class="col-sm-2 control-label"></label>
                 <div class="row">                    
                     <div class="col-md-6">
-                        <label class="col-sm-10 control-label">Fecha de Expiracion</label>
+                        <label class="col-sm-10 control-label">Fecha de Expiración</label>
                         <input type="date" class="form-control" placeholder="">
                     </div>
                     <div class="col-md-6">
-                        <label class="col-sm-10 control-label">Año de Expiracion</label>
+                        <label class="col-sm-10 control-label">Año de Expiración</label>
                         <input type="date" class="form-control" placeholder="">
                     </div>
                 </div>
