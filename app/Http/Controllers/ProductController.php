@@ -85,4 +85,14 @@ class ProductController extends Controller
             session()->flash('success', 'Producto removido con exito');
         }
     }
+
+    /**
+     * Write code on Method
+     *
+     * @return response()
+     */
+    public function checkout()
+    {
+        return view('checkout');
+    }
 }
